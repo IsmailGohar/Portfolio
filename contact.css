@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #28454e;
+    
+}
+#wrapper {
+    display: grid;
+    grid-template-areas: 'sidebar main wtsp'
+        'sidebar main wtsp';
+    grid-template-columns: 14rem 1fr 6rem;
+    grid-template-rows:  1fr;
+    height: 100vh;
+
+
+}
+#aside {
+    grid-area: sidebar;
+    background-color: rgb(19, 19, 19);
+
+
+}
+
+
+img {
+    width: 100%;
+    height: 200px;
+
+    object-position: center center;
+    vertical-align: middle;
+}
+
+#name-div {
+    padding: 13px 0px 13px 0px;
+    background-color: rgb(252, 161, 5);
+
+}
+
+#name-div h2 {
+    color: #151931;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+#navigation {
+    display: flex;
+
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#navigation a {
+
+    width: 50%;
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+
+#navigation a:hover {
+    color: orange;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#main
+{
+    grid-area: main;
+    
+}
+#heading
+{
+   
+    text-align: center;
+    padding: 80px;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+}
+#information
+{
+    
+   display: flex;
+   padding: 50px;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   
+    
+}
+.same-style
+{
+    border: 2px solid orange;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+strong
+{
+    color: #f8f8f8;
+}
+#data-entry
+{
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#location p
+{
+    margin-right: 70px;
+}
+#number p
+{
+    margin-left: 30px;
+}
+#email p
+{
+    margin-left: 80px;
+}
+#name
+{
+    width: 50%;
+    padding: 10px;
+}
+#mail
+{
+    width: 40%;
+    padding: 10px;
+}
+#meassage
+{
+    display: flex;
+   
+    align-items: start;
+   padding-left: 60px;
+    flex-direction: column;
+    gap: 20px;
+}
+#subject
+{
+    padding: 15px;
+    width: 95%;
+
+}
+#msg
+{
+    padding: 0 0 65px 10px;
+    width: 95%;
+    height: 100px;
+}
+#snd
+{
+    padding: 15px;
+    width: 15%;
+    color: #f8f8f8;
+    font-size: 17px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+}
+.hamburger {
+
+
+    display: none;
+    color: #f8f8f8;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#aside .close-btn {
+    display: none;
+    text-align: right;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+
+    background-color: rgb(94, 83, 63);
+}
+
+#whatsapp
+{
+    grid-area:  wtsp;
+    display: flex;
+    align-items: end;
+    
+    margin-bottom: 50px;
+    
+    
+}
+#talk
+{
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    #wrapper {
+        grid-template-columns: 12rem 1fr;
+        grid-template-areas: 'sidebar main';
+    }
+
+    #information {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .same-style {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 100px;
+    }
+
+    #snd {
+        width: 30%;
+    }
+}
+@media (min-width: 300px) and (max-width:1000px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'main';
+       
+    }
+
+    #main
+    {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .hamburger {
+
+
+        display: flex;
+
+    }
+    #aside {
+        position: fixed;
+        left: -100%;
+        width: 14rem;
+        height: 100%;
+        background-color: #131313;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    #aside.open {
+        left: 0;
+    }
+    #aside .close-btn {
+        display: flex;
+
+
+        text-align: right;
+
+    }
+
+
+
+   
+
+    #data-entry {
+        
+       margin-top: 300px;
+       
+        flex-direction: column;
+        gap: 10px;
+      height: 120px;
+      margin-left: 50px;
+      width: 100%;
+       
+        
+    }
+    #name
+    {
+        width: 100%;
+        padding: 15px;
+       
+    }
+    #mail
+    {
+        width: 100%;
+        padding: 15px;
+    }
+
+#meassage
+{
+   
+  
+   margin-left: 50px;
+    width: 100%;
+    padding: 20px;
+    gap: 1;
+    
+}
+#subject
+{
+    width: 100%;
+   
+}
+#msg
+{
+    width: 100%;
+}
+    #whatsapp
+    {
+       
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #heading {
+        padding: 50px;
+        font-size: 24px;
+    }
+
+    #information {
+        padding: 10px;
+    }
+
+    #data-entry, #meassage {
+        padding: 10px;
+    }
+
+    #snd {
+        width: 100%;
+    }
+}

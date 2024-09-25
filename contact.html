@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact-Me</title>
+</head>
+<body>
+    <section id="wrapper">
+        <aside id="aside">
+            <div class="close-btn">×</div>
+           <div id="image-sec">
+
+            
+            <img src="images/20210622_151017.jpg" alt="iSMAIL">
+        </div>
+
+            <div id="name-div">
+            <h2>M.ISMAIL Gohar</h2>
+        </div>
+           <nav id="navigation">
+           <a href="index.html">Home</a>
+           <a href="about.html">About Me</a>
+           <a href="resume.html">Resume</a>
+           <a href="projects.html">My Projects</a>
+           <a href="contact.html">Contact Me</a>
+           </nav>
+
+        </aside>
+
+        <main id="main">
+            <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div id="heading">
+                <h1>Let's get in touch</h1>
+            </div>
+
+            <div id="information">
+            <div id="location" class="same-style">
+              <a href="https://maps.app.goo.gl/iL4VXBsu64eKQBZt6" target="_blank"><i class="fa fa-map-marker" style="font-size:34px;color:orange"> <strong>Locate Me</strong></i></a>
+                <p style="color: green;">Pakistan</p>
+            
+
+            </div>
+            <div id="number" class="same-style">
+                <i class="fa fa-phone" style="font-size:34px;color:orange"><strong>&nbsp; Call Me</strong></i>
+                <p style="color: green;">(+92)3317867057</p>
+            </div>
+            <div id="email"class="same-style">
+                <i class="fa fa-envelope" style="font-size:34px;color:orange"><Strong>  Email Me</Strong></i>
+                <p style="color: green;">ismailgohar612@gmail.com</p>
+            </div>
+        </div>
+        <div id="data-entry">
+            <input type="text" placeholder="Enter Your Name" id="name" required> 
+            <input type="email" id="mail" placeholder="Email" required>  
+        </div>
+        <div id="meassage">
+            <input type="subject" placeholder="Your Subject" id="subject">
+
+            <input type="message" placeholder="Message" id="msg">
+            <input type="button"  id="snd" value="Send Message" onclick="validateForm()">
+        </div>
+       
+        </main>
+
+        <div id="whatsapp">
+         <a href="https://wa.link/oa5rit" target="_blank"> <img src="images/wtsp.png" alt="Let's Talk" id="talk"></a> 
+         
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

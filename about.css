@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+
+    display: grid;
+
+    grid-template-areas: 'sidebar main'
+        'sidebar main';
+
+    grid-template-columns: 14rem 1fr;
+    height: 100vh;
+
+}
+
+
+#aside {
+    grid-area: sidebar;
+    background-color: rgb(19, 19, 19);
+
+
+}
+
+
+img {
+    width: 100%;
+    height: 200px;
+
+    object-position: center center;
+    vertical-align: middle;
+}
+
+#name-div {
+    padding: 13px 0px 13px 0px;
+    background-color: rgb(252, 161, 5);
+
+}
+
+#name-div h2 {
+    color: #151931;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+#navigation {
+    display: flex;
+
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#navigation a {
+
+    width: 50%;
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+
+#navigation a:hover {
+    color: orange;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#main {
+    grid-area: main;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f5f5f5;
+}
+
+#picture {
+
+    width: 35%;
+    height: 70%;
+    padding: 10px;
+
+
+
+}
+
+#picture img {
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+#content {
+
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+
+
+}
+
+#content h1 {
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 550;
+    line-height: 1em;
+}
+
+strong {
+    color: orange;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 1.7em;
+    width: 650px;
+
+    color: #46435E;
+
+}
+
+#info {
+
+    height: 200px;
+
+}
+
+span {
+    color: black;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hamburger {
+
+
+    display: none;
+    color: rgb(26, 25, 25);
+    cursor: pointer;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#aside .close-btn {
+    display: none;
+    text-align: right;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+
+    background-color: rgb(94, 83, 63);
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        grid-template-areas: 'main';
+        grid-template-columns: 1fr;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #aside {
+        position: fixed;
+        left: -100%;
+        width: 14rem;
+        height: 100%;
+        background-color: #131313;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    #aside.open {
+        left: 0;
+    }
+
+    #aside .close-btn {
+        display: flex;
+        text-align: right;
+    }
+
+    #main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #picture img {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+    }
+
+    #content {
+        width: 100%;
+        height: 100%;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #content p {
+        font-size: 20px;
+        width: 420px;
+    }
+
+    #picture {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    #content h1 {
+        font-size: 28px;
+    }
+
+    #content p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #picture {
+        width: 90%;
+        height: 50%;
+    }
+
+    #main {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #content {
+        width: 90%;
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    #content h1 {
+        font-size: 24px;
+    }
+
+    #content p {
+        font-size: 15px;
+    }
+
+    #picture {
+        height: 35%;
+    }
+}
