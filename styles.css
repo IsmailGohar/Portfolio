@@ -232,15 +232,16 @@ strong {
     letter-spacing: 1.5px;
 }
 
-
-@media (max-width: 768px) {
+ 
+@media (max-width: 768px) and (max-height: 1024px) {
     #wrapper {
         grid-template-areas:
             'header'
             'footer';
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        min-height: 100vh;
+        grid-template-rows: 7em 1fr;
+        height: 110vh;
+      
     }
 
     .hamburger {
@@ -301,72 +302,49 @@ strong {
 
     }
 
-}
+} 
 
-@media (min-width: 485px) and (max-width:570px) {
-
-   header
-   {
-    height: 100px;
-   }
-
-    .hamburger {
-
-
-        display: flex;
-        color: white;
-        cursor: pointer;
-        font-size: 30px;
-        padding: 20px;
-    }
-
-
-    #aside {
-        position: fixed;
-        left: -100%;
-        width: 14rem;
+@media (max-width: 480px) {
+    #header
+    {
         height: 100%;
-        background-color: #131313;
-        transition: left 0.3s ease;
-        z-index: 1000;
     }
-
-    #aside.open {
-        left: 0;
+    #head-name
+    {
+       
+       
+        font-size: 30px;
     }
-
-    #aside .close-btn {
-        display: flex;
-
-
-        text-align: right;
-
+    #skills
+    {
+       
+     font-size: 20px;
+     
     }
 
     #head-div {
         flex-direction: column;
-        gap: 0.5em;
+        gap: 1em;
     }
 
     #head-div2 {
-        width: 80px;
-        height: 120px;
-        
+        width: 60px;
+        height: 100%;
     }
 
     #main-content {
+        flex-direction: column;
         background-size: cover;
-
-    }
-
-    #head-name {
-        margin-right: 110px;
+        
     }
 
     #part1 {
-        font-size: 1.9rem;
-        width: 100%;
-       
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    #head-name2 {
+        margin-right: 100px;
     }
 
     #social {
@@ -374,9 +352,13 @@ strong {
         gap: 20px;
     }
 
+    #social a i {
+        width: 24px;
+    }
+
     #social a i:hover {
         color: orange;
         border-color: orange;
-
     }
 }
+
