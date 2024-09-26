@@ -346,9 +346,12 @@ strong {
         
     }
 
-    #part1 {
-        width: 90%;
-        font-size: 1.8rem;
+    
+         #part1 {
+        width: 100%;
+        
+    
+
     }
 
     #head-name2 {
