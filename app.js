@@ -40,7 +40,7 @@ function validateForm() {
     
 }
 
-const texts = ["Software Engineer", "Web Developer" , 'Wordpress Developer'];
+const texts = ["Software Engineer", "Web Developer" , 'Wordpress Dev'];
 let currentIndex = 0, letterIndex = 0, isDeleting = false;
 
 setInterval(() => {
