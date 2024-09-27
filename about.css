@@ -158,7 +158,11 @@ span {
     color: rgb(26, 25, 25);
     cursor: pointer;
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 47px;
+    margin-left: -52px;
+  
 }
 
 #aside .close-btn {
