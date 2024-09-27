@@ -176,10 +176,17 @@ grid-template-columns:  1fr;
 
     .cards {
         grid-template-columns: repeat(1, 1fr);
-        gap: 23px;
-        width: 53%;
-        margin-left: 197px;
-      }
+    gap: 23px;
+   
+    margin-left: 29px;
+    height: auto;
+  }
+    
+  #head h1
+  {
+    font-size: 25px;
+    margin-top: 30px;
+  }
    
     .hamburger {
 
