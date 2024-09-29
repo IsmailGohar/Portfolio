@@ -6,39 +6,42 @@ document.querySelector('.close-btn').addEventListener('click', function() {
     document.getElementById('aside').classList.remove('open');
 });
 
-function validateForm() {
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('mail').value;
-    let subject = document.getElementById('subject').value;
-    let message = document.getElementById('msg').value;
-    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+function handleSendMessage() {
+   
+    let formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('mail').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('msg').value
+    };
 
-    if (name === "") {
-        alert("Please enter your name.");
-        return false;
-    }
-    if (email === "" || !email.match(emailPattern)) {
-        alert("Please enter a valid email address.");
-        return false;
-    }
-    if (subject === "") {
-        alert("Please enter a subject.");
-        return false;
-    }
-    if (message === "") {
-        alert("Please enter a message.");
-        return false;
-    }
-    alert("Submitted successfully!");
-
-    document.getElementById('name').value = "";
-            document.getElementById('mail').value = "";
-            document.getElementById('subject').value = "";
-            document.getElementById('msg').value = "";
-
-            return true;
     
+    if (!formData.name) {
+        alert("Please enter your name.");
+        return;
+    }
+    if (!formData.email || !formData.email.match(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+    if (!formData.subject) {
+        alert("Please enter a subject.");
+        return;
+    }
+    if (!formData.message) {
+        alert("Please enter a message.");
+        return;
+    }
+
+    
+    let mailtoLink = `mailto:${formData.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent('Name: ' + formData.name + '\n\nMessage: ' + formData.message)}`;
+
+  
+    window.location.href = mailtoLink;
 }
+
+
+
 
 const texts = ["Software Engineer", "Web Developer" , 'Wordpress Dev'];
 let currentIndex = 0, letterIndex = 0, isDeleting = false;
