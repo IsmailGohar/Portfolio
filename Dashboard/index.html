@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>DashBoard</title>
+</head>
+
+<body>
+    <section id="wrapper">
+
+        <header id="header">
+
+
+            <h1>ISMAIL.</h1>
+
+            <div id="search">
+                <label for="search-box">
+                    <input type="search" id="search-box" placeholder="Search..."><i class="fa fa-search"
+                        aria-hidden="true"
+                        style="font-size:30px;color:white;background-color: purple; border-radius: 5px;"></i></label>
+            </div>
+
+
+            <div id="icon">
+                <i class="fa fa-bell" aria-hidden="true" style="font-size:28px;color:orange"></i><img
+                    src="man_4140048.png" alt="man" id="man">
+
+
+            </div>
+            
+        </header>
+
+        <aside id="sidebar">
+
+            
+            <nav id="navigation">
+            <a href="#" id="dash" ><i class="fa fa-dashboard" style="font-size:24px"></i>Dashboard</a>
+            <a href="#" class="aclass"><i class="fa fa-newspaper-o" style="font-size:24px;color:purple"></i>Articles</a>
+            <a href="#"class="aclass"><i class="fa fa-file-text-o" style="font-size:24px;color:purple"></i>Report</a>
+            <a href="#"class="aclass"><i class="fa fa-institution" style="font-size:24px;color:purple"></i>Institution</a>
+            <a href="#"class="aclass"><i class='far fa-user-circle' style='font-size:24px;color:purple'></i>Profile</a>
+            <a href="#"class="aclass"><i class="fa fa-gear fa-spin" style="font-size:24px;color:purple"></i>Setting</a>
+            <a href="#"class="aclass"><i class="fa fa-power-off" style="font-size:24px;color:purple"></i>Logout</a>
+        </nav>
+
+        </aside>
+
+        <main id="main">
+            <section id="cards">
+                <div id="card1" class="main-card">
+                    <h2>60.5k <i class="fa fa-eye" style="font-size:25px;width: 10px;"></i></h2>
+                    <p>Active Views</p>
+                </div>
+                <div id="card2" class="main-card">
+                    <h2>150 <i class="fa fa-thumbs-o-up" style="font-size:25px;width: 10px;color: antiquewhite;"></i></h2>
+                    <p>Likes</p>
+                </div>
+                <div id="card3" class="main-card">
+                    <h2>320 <i class="fa fa-comments-o" style="font-size:30px;width: 10px;"></i></h2>
+                    <p>Comments</p>
+                </div>
+                <div id="card4" class="main-card">
+                    <h2>70 <i class="fa fa-check-square-o" style="font-size:30px;margin-left: 20px;"></i></h2>
+                    <p>Published</p>
+                </div>
+
+            </section>
+            <section id="articles">
+                <div id="arti-btn">
+                    <h1>Recent Articles</h1>
+                <button id="view">View All</button>
+                
+                </div>
+                <hr style="width:95%;margin-left:30px">
+
+
+                <table>
+                    <tr>
+                        <th>Article</th>
+                        <th>Views</th>
+                        <th>Comments</th>
+                        <th>Status</th>
+                       
+                    </tr>
+                    <tr>
+                        <td>Article 72</td>
+                        <td>2.9k</td>
+                        <td>200</td>
+                        <td><button class="pub">Published</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Article 99</td>
+                        <td>3k</td>
+                        <td>322</td>
+                        <td><button class="pub">Published</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Article 55</td>
+                        <td>8k</td>
+                        <td>121</td>
+                        <td><button class="pub">Published</button></td>
+                        
+                    <tr>
+                        <td>Article 43</td>
+                        <td>55k</td>
+                        <td>999</td>
+                        <td><button class="pub">Published</button></td>
+                        
+                    </tr>
+                 
+                 
+                </table>
+                
+            </section>
+        </main>
+
+        <footer id="footer">
+            <h1>ADMIN PANEL</h1>
+        </footer>
+
+
+    </section>
+</body>
+
+</html>
