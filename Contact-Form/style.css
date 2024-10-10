@@ -1,0 +1,268 @@
+*
+{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+header
+{
+    border-bottom: 1px solid rgb(19, 18, 18);
+    height: 115px;
+    background-color: black;
+}
+header h1
+{
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 60px;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    padding-top: 10px;
+    color:orange;
+    width: 170px;
+    text-align: center;
+}
+nav a
+{
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+nav
+{
+    float: right;
+    margin-top:60px;
+    border: 2px solid black;
+    margin-right: 60px;
+    padding-top: 10px;
+    font-size: 20px; 
+}
+nav a:hover
+{
+    color: orange;
+    text-decoration: underline;
+}
+form {
+    
+    padding: 79px;
+    background-image: url(tech.jpg);
+    background-size: cover;
+    
+}
+.form-fields, aside {
+    display: inline-block;
+    vertical-align: top;
+   
+}
+.form-fields {
+    width: 50%;
+    line-height:30px;
+    margin-left: 90px;
+    
+}
+
+aside {
+    width: 35%;
+    padding: 30px;
+    text-align: center;
+    height: 500px;
+}
+p
+{
+    
+    font-size:20px;
+    font-weight:lighter;
+    color: white;
+    text-align: start;
+    margin-left: 60px;
+    line-height: 35px;
+}
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+label
+{
+    font-size: larger;
+    color: white;
+    
+}
+input
+{
+    border-radius: 10px;
+    width: 50%;
+   padding: 10px;
+   border-color: rgb(245, 208, 141);
+   
+}
+input:focus, textarea:focus {
+    border-color: orange; 
+    outline: none; 
+}
+
+textarea {
+    padding: 10px;
+    resize: none; 
+    border-radius: 10px;
+    width: 50%;
+    height: 200px;
+    border-color: rgb(250, 169, 19);
+}
+textarea:hover
+{
+    border-color: orange;
+}
+button
+{
+    border-radius: 20px;
+    padding: 10px;
+    height: 40px;
+    width: 90px;
+    border: 2px solid rgb(245, 242, 242);
+    
+    background-color: orange;
+}
+button a
+{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+#sp1
+{
+    color: orange;
+    font-size: 40px;
+    margin-right: 85px;
+    
+}
+#sp2
+{
+    color: rgb(241, 199, 120);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#icons {
+    
+    display: inline-block; 
+    padding: 19px;
+    margin-right: 180px;
+}
+
+#icons i {
+    color: orange; 
+    margin-right: 5px; 
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+#icons span {
+     
+    vertical-align: middle;
+    color: white;
+}
+#icon {
+    
+    display: block; 
+    padding: 15px;
+    margin-right: 100px;
+    
+}
+
+#icon i {
+    color: orange; 
+    margin-right: 5px; 
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+#icon span {
+    color: white; 
+ 
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1024px) {
+    header h1 {
+        width: 150px;
+        font-size: 18px;
+    }
+    nav {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    nav a {
+        margin-right: 20px;
+    }
+    .form-fields, aside {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        width: 120px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    nav {
+        font-size: 16px;
+        margin-right: 10px;
+        border: none;
+    }
+    nav a {
+        margin-right: 10px;
+        font-size: smaller;
+    }
+    .form-fields, aside {
+        width: 100%;
+        padding: 10px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #sp1, #sp2 {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    #icons, #icon {
+        display: block;
+        margin-right: 0;
+        padding: 10px;
+    }
+    #icons i, #icon i {
+        width: 20px;
+        height: 20px;
+        padding-top: 3px;
+    }
+}
