@@ -43,7 +43,7 @@ function handleSendMessage() {
 
 
 
-const texts = ["Software Engineer", "Web Developer" , 'Wordpress Dev'];
+const texts = ["Software Engineer", "SQA", "Web Developer/WordPress"];
 let currentIndex = 0, letterIndex = 0, isDeleting = false;
 
 setInterval(() => {
