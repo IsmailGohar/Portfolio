@@ -233,7 +233,7 @@ strong {
     background-color: rgb(94, 83, 63);
 }
 #animatedText {
-    font-size: 2px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -379,6 +379,7 @@ strong {
     color: orange;
     border-color: orange;
 }
+
 
 
 
