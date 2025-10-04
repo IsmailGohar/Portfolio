@@ -99,6 +99,16 @@
     </section>
 
     <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://localhost:5678/webhook/f6e2b4ea-00ac-49bb-b3dc-386f3230d5db/chat'
+	});
+    
+</script>
 </body>
 
 </html>
+
