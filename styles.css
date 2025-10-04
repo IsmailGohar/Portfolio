@@ -161,6 +161,7 @@ h1 {
 
 #head-name {
     color: white;
+    font-size:20px;
 }
 
 strong {
@@ -378,4 +379,5 @@ strong {
     color: orange;
     border-color: orange;
 }
+
 
